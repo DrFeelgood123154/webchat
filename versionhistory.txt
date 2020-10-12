@@ -1,0 +1,235 @@
+1.8.0 - 20/12/2018
+-Changed the code and looks of "images window"
+-Added some new commands for that^
+-Added using random sound messages from a category
+
+1.7.1 - 14/12/2018
+-Added "search" feature to images window and sounds window
+
+1.7.0 - 12/12/2018
+-Added a ban system
+-And several new admin chat commands
+-Made the database case sensitive
+-Fixed how the settings are loaded
+-"mute" button state is now saved in cookies (so it will persist through sessions)
+
+1.6.1 - 11/12/2018
+-Changed the looks of file upload progress window and added a "copy link" button to it
+
+1.6.0 - 09/12/2018
+-Added an option for saving and loading the user's chat settings from the server
+-Added a "muted" icon to the user's status if he can't hear sound messages (either muted the chat or disabled them)
+-Added a setting for userlist update interval
+-Added an admin command for server code stats
+-Files uploaded through chat will now be sent as the user's message including the user's private message target
+
+1.5.2 - 08/12/2018
+-Added a setting for "new message notification sound" source
+-Added a setting for "new messages notification line" color and it's border color
+-Removed the old "reset" buttons in settings
+-Some minor visual changes
+
+1.5.1 - 30/11/2018
+-Added a "scroll to bottom" button
+-Made the scroll bar customizable in settings
+
+1.5.0 - 28/11/2018
+-Visual changes to the user list
+-Removed some unnecessary if's from the window resize code
+-Renamed 'mute all sounds' button to 'mute' and moved it to the right of the top bar
+-Added some settings for users list
+-Some more changes (probably like 20)
+-New message notification sound
+
+1.4.4 - 27/11/2018
+-Greeting sound is now disabled by default
+
+1.4.3 - 24/11/2018
+-Chat images will now return to their normal size when the mouse pointer leaves image's bounds instead of message's bounds
+-Sound messages and image messages will now work with additional text in the message
+
+1.4.2 - 21/11/2018
+-Fixed an error with colors not changing properly for the user
+-Fixed an error with images getting a seizure on expand when the chat window had a small resolution
+-Fixed chat size scaling on window resize
+
+1.4.1 - 01/11/2018
+-Added a setting to show global messages when sending private messages (when PM target is specified)
+
+1.4.0 - 31/10/2018
+Some changes to private messages which should be done months ago:
+-PM target can now be "unselected" by clicking the same user again
+-PM target on the user list will now have "PM color" background
+-Added a new settings for private messages color
+-If the PM target is specified then the chat will only show messages from the PM target or the user
+And non PM related
+-Added a note to the register window that passwords are hashed
+-Fixed two missing semicolons in the code which didn't really cause any errors because javascript is so extremely forgiving
+-Chat height and input height settings are now set to percent instead of pixels
+-Added some code to make the chat adjust if the browser window is resized
+-Removed "sound msgs" checkbox
+-Removed "stop sounds" button
+-"mute all sounds" button now has the effect of 'stop sounds' button
+-"mute all sounds" button now has a green background when enabled
+
+1.3.19 - 15/10/2018
+-Added a proper error when the server doesn't reply for long (connection lost) and an auto reconnect
+
+1.3.18 - 08/10/2018
+-Fixed a small error with some youtube video links
+
+1.3.17 - 03/10/2018
+-Online users list is now stored in memory instead of HDD (lol)
+-Fixed a bug with the entire chat html disappearing into the void in one very special case
+
+1.3.16 - 01/10/2018
+-Added spooky decorations for the spooktober
+-Added some code so events like halloween can be easily enabled or disabled for chat
+-Added new setting if the users don't want the chat to change for holidays and other events like that
+
+1.3.15 - 28/09/2018
+-Added a page icon notification on new message
+-This can be disabled in the settings so the icon won't change if the user doesn't want it to
+-I don't know why this chat had so many updates or why it's even still alive
+
+1.3.14 - 12/09/2018
+-Added a check for webp support in user's web browser and a warning+error if there's no webp support
+-Added a .jpg fallback for 9gag posts in webp format
+
+1.3.13 - 09/09/2018
+-Moved motd message to the top right corner of chat messages container, it won't appear as normal chat messages now
+-Reverted latency track to the little less accurate old state, this one was quite buggy
+
+1.3.12 - 07/09/2018
+-Message input and pm target input now change color if pm target is specified
+-Added a 'message of the day' server feature
+
+1.3.11 - 03/09/2018
+-User's image in messages will now center if it's width is less than the image cell space
+
+1.3.10 - 30/08/2018
+-Added user statuses and an option to disable it for those who wish to be always online
+
+1.3.9 - 29/08/2018
+-Fixed file upload progress
+
+1.3.8 - 18/08/2018
+-Youtube video preview will now read and apply youtube video start time if one is specified in the video url
+-Fixed login window and chat not updating if the user pressed enter instead of clicking the button
+
+1.3.7 - 13/08/2018
+-Added a window with "reaction images" list where user can preview and select them to send them as message
+-Converted all "reaction images" to web formats
+-Added a 'clear' button for PM username
+
+1.3.6 - 12/08/2018
+-Added a /roll command
+
+1.3.5 - 06/07/2018
+-Added an option to display message date below message sender
+-Fixed updating messages with reversed messages enabled
+
+1.3.4 - 28/06/2018
+-Added a speaker icon to sound messages
+-Added a sound warning to the 'basics' tab of the help window
+-All sounds are now muted on user's first visit to the chat
+-Bind sounds are now turned off by default, it can be specified in the url whether to turn them on or off by adding binds=1 or binds=0 to the url
+-Fixed an error with the chat being unable to reconnect if user lost his session (unexpected php's retardism)
+-A few small fixes related to server security
+-Default new message sound volume lowered from 100% to 80%
+-Some small changes to the chat visuals
+-Clicking one of the chat style presets in settings window now applies the changes instantly so the user can preview the changes
+-Clicking cancel in the settings window now reverts everything to the state from before the settings window was opened last time
+-Also fixed a harmless bug with loading the settings
+-Finally bothered to fix the issue of database using far more resources than it should
+-Improved precision of latency calculation
+
+1.3.3 - 27/06/2018
+-Added several admin chat commands
+-Added /poke and /goomba user chat commands
+-Added chat commands tab to the help window
+-Fixed drag&drop file upload so the upload window won't show if the user didn't have any files selected
+-Sound binds are now sorted by category
+
+1.3.2 - 26/06/2018
+-Lowered max afk time for bind sounds to 5 minutes
+-Fixed a bug with logging out
+-Fixed a bug that made all sounds play again if connection with chat was lost
+
+1.3.1 - 24/06/2018
+-Added a toggle for chat bind sounds to the top bar of the chat
+-Added volume setting for chat bind sounds
+-Chat bind sounds won't play if user has been inactive on chat for more than 10 minutes
+-Added a help window tab with a list of sound binds which can be clicked to use them
+-Added sound notification when user logs in
+-Added button to mute all sounds
+-Also added an option to mute sounds in the url
+
+1.3.0 - 23/06/2018
+The awesome sound update
+-Added some 'welcome' sounds on user join (only for the one who joins)
+-Added sound tab to settings
+-Added settings for greeting sound and bind sounds
+-Added bind sounds
+-Added !bindsounds to list binds with sounds
+-Added /sstop command to stop all currently playing binds in the user's browser
+-Added a small upgrade to the chat settings
+-Added private messages
+-Added some secret commands for users with certain admin permissions
+-Some chat commands now play sounds on failure or success
+-A few small changes in the chat for the private messages feature
+-Probably added plenty of unexpected features and bugs
+
+1.2.1 - 20/06/2018
+-Videos with autoplay tag will now pause if they're not visible on the screen (e.g user scrolled down)
+
+1.2.0 - 19/06/2018
+-Added chat commands and chat events, which I'll probably have to redo later
+-Plenty of bugs expected due to the shortcut I used when adding this feature, at least until I do it the proper way
+
+1.1.5 - 15/06/2018
+-Notification sound cooldown now resets when the chat is focused
+-Focus will set back to message input after confirming image upload
+-User can now double click on an image to scroll to it
+-Images uploaded through file upload now act the same as images uploaded with ctrl+v if image preview is enabled
+-Fixed slight error with how images expand
+-Added gif-like behaviour to short video files with no sound
+
+1.1.4 and a half - 09/06/2018
+-Fixed the position of user image in messages, they were set to center but were supposed to be top
+
+1.1.4 - 08/06/2018
+-Added setting for font type
+-Added preview for GIF files
+-Added binds (reaction images/gifs)
+-User's message color is now saved
+-User's profile image is now properly updated when the user logs in (or rather I just added that missing code)
+-"paste image" can now be confirmed with enter or space
+
+1.1.3 - 26/05/2018
+-Small performance upgrade
+
+1.1.2 - 24/05/2018
+-Added preview for image links, I forgot to do that earlier
+-Added youtube video previews again because I accidentally deleted that code yesterday
+-Added settings for video width and height
+-Added customizable notification sound cooldown
+-Slightly changed the way server processes messages
+-Changed how messages are sent to the server in order to use less bandwidth if the user sends multiple messages in rapid succession
+-Fixed the way messages are joined when the messages are reversed. Don't know why I made it like this in the first place
+-Fixed dates, now they're not one month behind (though sending messages to the past would be nice)
+
+1.1.1 - 23/05/2018
+-Changed the look of the top bar
+-Changed the settings window, the settings are now sorted by tabs to make them easier to find
+-Some other minor visual changes
+-Added "drag and drop" file upload, now you don't have to select the file to upload it
+-Fixed auto scroll on new messages. I forgot to add a couple of letters to the variable again
+
+1.1.0 - 22/05/2018
+-I've put the settings into a single class 'cause I like when my code is pretty
+-Added asdf4 to the chat
+-Some minor changes (mostly fine tuning the features)
+
+1.0.0 - 21/05/2018
+-Created as a one day project

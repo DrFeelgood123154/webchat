@@ -1,0 +1,152 @@
+a{
+    outline: none;
+    text-decoration: none;
+    color: red;
+}
+
+a:link, a:visited{
+    color: lightgreen;
+}
+
+a:hover{
+    color: lightblue;
+}
+
+body{
+    background-color: #111111;
+    color: lightgray;
+    overflow:hidden;
+}
+
+textarea{
+    background-color: #222322;
+    color: lightgray;
+}
+
+input:focus{
+    background-color: darkgreen;
+}
+
+input{
+    color: lightgray;
+    background-color: #333433;
+    border-color: #888888;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #202020;
+}
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+input.settings{
+    width: 125px;
+}
+
+table.settings{
+    text-align:center;
+    margin: 0 auto;
+    border-bottom: 1px solid lightgreen;
+}
+
+table.settings td{
+    text-align: center;
+}
+
+button.settings{
+    min-width: 50px;
+}
+
+button{
+    background-color:lightgray;
+}
+button:hover{
+    background-color: #aabbcc;
+    border-color: silver;
+}
+
+.msgTextContainer{
+    vertical-align: top;
+    padding-right: 10px;
+    word-break: break-all;
+    word-break: break-word;
+    white-space: pre-wrap;
+    overflow: none;
+}
+
+#togglePanelButton{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline;
+    margin: 0 auto;
+    float:right;
+    border: 1px solid #444466;
+    background-color: #111133;
+    font-size: 18px;
+}
+#togglePanelButton:hover{
+    background-color: #345534;
+    border-color: #666666;
+}
+
+.topBarButton{
+    color: #dddddd;
+    background-color: #111133;
+    border-color: #444466;
+    font-weight: bold;
+}
+.topBarButton:hover{
+    background-color: #114411;
+    border-color: #666677;
+}
+
+.chatimage{
+    cursor: zoom-in;
+}
+
+#scrollToBottom{
+    display: flex;
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    width: 200px;
+    height: 25px;
+    background: black;
+    border: 2px outset gray;
+    border-radius: 6px;
+    background-image: radial-gradient(black 65%, rgba(50, 50, 50));
+    cursor: pointer;
+}
+
+#scrollToBottom:hover{
+    background: rgb(150, 150, 0);
+    border-color: rgb(150, 150, 0);
+    background-image: radial-gradient(black 65%, rgb(150, 150, 0));
+}
+
+#msgSendButton{
+    color: #999999;
+    cursor: pointer;
+    font-size: 16px;
+    border: solid 2px #333333;
+    border-radius: 6px;
+    background-color: rgb(15, 15, 15);
+    user-select:none;
+}
+#msgSendButton:hover{
+    background-image: radial-gradient(rgb(0, 25, 0) 55%, rgb(30, 60, 40));
+}
